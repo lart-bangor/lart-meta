@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "lart-meta"
+version = "0.0.1"
+description = "A meta package for the L'ART Research Toolkit"
+authors = ["Florian <florian@florian.me.uk>"]
+license = "AGPL-3.0-or-later OR EUPL-1.2+"
+readme = "README.rst"
+packages = [{include = "lart_meta"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+
+[tool.poetry.group.dev.dependencies]
+Sphinx = "<7.0.0"
+sphinx-rtd-theme = "^1.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
